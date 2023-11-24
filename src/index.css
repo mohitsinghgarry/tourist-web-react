@@ -1,13 +1,114 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Montserrat:ital,wght@0,200;1,100&family=Quicksand:wght@300;400&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  font-family: 'Exo 2', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+.title{
+  margin-top:6vh;
+  margin-bottom: 6vh;
+  font-size: 5rem;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#title-hub{
+  background-color:rgb(255,153,0);
+  border-radius: 15px;
+  padding: 5px;
+}
+#title-tour{
+  color:white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px;
+}
+.cards{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.card{
+  width: 400px;
+  height: max-content;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+}
+.image{
+  position: relative;
+  right: 5px;
+  width: 380px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.tour-info{
+  margin: 10px 10px;
+}
+.tour-price{
+  font-size: xx-large;
+  color: rgb(127, 206, 7);
+}
+.tour-name{
+  font-size: x-large;
+  font-weight: bolder;
+}
+.read-more{
+  color: #12b0e8;
+}
+.read-more:hover{
+  text-decoration: underline;
+}
+.btn-white{
+  height: 6vh;
+  border-radius: 20px;
+  border: none;
+ font-size: large;
+  cursor: pointer;
+  transition: .5s;
+  background-color: rgb(211, 211, 211);
+  box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+  padding: 10px;
+}
+.btn-white:hover{
+  color: white;
+  background-color: #12b0e8;
+  box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+}
+.refresh{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn-white{
+  margin-top: 5rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ending-text-left{
+  background-color:rgb(255,153,0);
+  border-radius: 10px;
+  padding: 5px;
+}
+.tour-details{
+  margin-bottom: 2rem ;
+}
+.description{
+  font-size: 20px;
 }
